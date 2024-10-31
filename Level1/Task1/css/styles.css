@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('file:///Users/arnavangarkar/Downloads/Pic_restautant.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    height: 80vh;
+    background: url('file:///Users/arnavangarkar/Downloads/Pic_restautant.avif') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.btn {
+    background-color: #ff4757;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-section h2, .testimonials-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.testimonials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
