@@ -1,0 +1,199 @@
+/* Import Font from Google */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, "Libre Franklin", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #000;
+}
+
+.tribute-badge {
+    align-self: flex-start;
+    letter-spacing: 10px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.banner {
+    background-image: url('https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg');
+    background-position: right 4rem;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    filter: saturate(0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.biography {
+    height: auto;
+    padding: 3rem 2rem;
+}
+
+.biography .bio {
+    margin-bottom: 8rem;
+}
+
+.biography h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.biography .bio h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: aquamarine;
+}
+
+.biography p {
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+#fourth-page {
+    max-width: 900px;
+    padding: 3rem 2rem;
+    height: auto;
+}
+
+#fourth-page ul {
+    position: relative;
+}
+
+#fourth-page li {
+    position: relative;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(45, 45, 43, 0.15);
+    margin-bottom: 40px;
+}
+
+#fourth-page .circle {
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(0, 204, 255);
+}
+
+#fourth-page .line {
+    position: absolute;
+    left: -20px;
+    top: 5rem;
+    transform: translateY(40px);
+    width: 2px;
+    height: 89%;
+    background: rgb(0, 204, 255);
+}
+
+.quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.quote div {
+    flex: 1;
+}
+
+.quote .img-div {
+    text-align: right;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.pQuote {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.pQuote span {
+    color: rgb(0, 204, 255);
+    text-align: right;
+    display: block;
+    font-size: 0.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+    .quote {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .quote div {
+        flex: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        background-position: right 10rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        background-position: right bottom;
+    }
+}
